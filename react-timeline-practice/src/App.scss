@@ -1,0 +1,82 @@
+.container {
+  // 글자 행,자간 간격
+  // font-size: 1em;
+  // font-weight: 300;
+  // line-height: 1.5;
+  // letter-spacing: 0.05em;
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+
+  .timeline {
+    // 세로 라인
+    position: relative;
+    max-width: 95%;
+    list-style: none;
+    &:before {
+      background: linear-gradient(black, 80%, white);
+      content: "";
+      margin-left: -1px;
+      position: absolute;
+      top: 0;
+      left: 2em;
+      width: 1px;
+      height: 100%;
+    }
+  }
+
+  .event {
+    // 히스토리 포인트 지점
+    position: relative;
+  }
+  .icon {
+    // 히스토리 포인트 아이콘
+    border-radius: 50%;
+    background-color: #ef2287;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -1.5em;
+    width: 0.6em;
+    height: 0.6em;
+  }
+
+  .body {
+    // 히스토리 라인 오른쪽 텍스트 영역
+    padding: 1.3em 0.5em 0.5em 1em;
+    position: relative;
+    top: -1.875em;
+    left: 2em;
+    width: 95%;
+    // h3 {
+    //   font-size: 1.75em;
+    // }
+    // h4 {
+    //   font-size: 1.2em;
+    //   margin-bottom: 1.2em;
+    // }
+  }
+
+  // .date {
+  //   color: white;
+  //   background-color: black;
+  //   box-shadow: inset 0 0 0 0em #ef795a;
+  //   display: inline-block;
+  //   margin-bottom: 1.2em;
+  //   padding: 0.25em 1em 0.2em 1em;
+  // }
+
+  // .description {
+  //   strong {
+  //     font-weight: 700;
+  //   }
+  //   p {
+  //     padding-bottom: 1.2em;
+  //   }
+  // }
+}
